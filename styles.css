@@ -7,7 +7,7 @@ html, body {
 
 /* Define styles for the container */
 .container {
-    max-width: 400px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -86,10 +86,53 @@ footer.footer-with-at-sign {
     text-align: center;
 }
 
-/* Style for the Contact Us button */
+/* Style for the Contact Us section */
+.contact-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-section li::before {
+    content: "\2022"; /* Bullet point */
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Style for the "Call" button link */
 .contact-button {
     text-align: center;
     margin-top: 20px;
+}
+
+.contact-button a {
+    text-decoration: none;
 }
 
 .contact-button button {
@@ -102,7 +145,7 @@ footer.footer-with-at-sign {
     transition: background-color 0.3s;
 }
 
-.contact-button button: hover {
+.contact-button button:hover {
     background-color: #0056b3;
 }
 
