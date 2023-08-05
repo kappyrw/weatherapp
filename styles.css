@@ -62,16 +62,6 @@ button:hover {
     margin: 5px 0;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 767px) {
-    .container {
-        max-width: 100%;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 10px;
-    }
-}
-
 /* Footer Styles */
 footer {
     background-color: #f0f0f0;
@@ -102,18 +92,31 @@ footer.footer-with-at-sign {
     margin-top: 20px;
 }
 
-.contact-button a {
-    display: inline-block;
+.contact-button button {
     background-color: #007bff;
     color: #fff;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
-    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.contact-button a:hover {
+.contact-button button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+    }
+  
+    /* Show the Contact Us button on mobile devices */
+    .contact-button button {
+        display: inline-block;
+    }
 }
