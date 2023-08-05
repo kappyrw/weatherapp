@@ -10,10 +10,11 @@
   <div class="container">
     <h1>Weather Tracker</h1>
     <form id="weatherForm">
-      <input type="text" id="locationInput" placeholder="Enter location">
-      <button type="submit">Get Weather</button>
+      <label for="locationInput">Enter location:</label>
+      <input type="text" id="locationInput" placeholder="e.g., New York" required>
+      <button type="submit" aria-label="Get Weather" speech="Get Weather">Get Weather</button>
     </form>
-    <div id="weatherInfo"></div>
+    <div id="weatherInfo" aria-live="polite"></div>
 
     <div class="fun-content">
       <h2>Fun Activities for Today:</h2>
@@ -30,14 +31,8 @@
         <li>Watch a hilarious comedy movie. 🎥😂</li>
       </ul>
     </div>
-
-    <!-- Contact Us Button -->
-    <div class="contact-button">
-      <a href="tel:+25081718040">Contact Us</a>
-    </div>
   </div>
 
-  <!-- Footer -->
   <footer class="footer-with-at-sign">
     <center><p class="down">copyright@2023kappyrwanda</p></center>
     <center><p>Eric@Uwanyagasani</p></center>
