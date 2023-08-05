@@ -1,95 +1,119 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+/* Reset default margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
+/* Define styles for the container */
 .container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  min-height: 100vh; /* Set minimum height to ensure the footer stays at the bottom */
-  display: flex;
-  flex-direction: column; /* Use flex layout for the container */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 100vh; /* Set minimum height to ensure the footer stays at the bottom */
+    display: flex;
+    flex-direction: column; /* Use flex layout for the container */
 }
 
 h1 {
-  margin-bottom: 20px;
-  color: #007bff;
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
 input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  color: #333;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 #weatherInfo {
-  margin-top: 20px;
-  text-align: left;
+    margin-top: 20px;
+    text-align: left;
 }
 
 #weatherInfo h2 {
-  margin-bottom: 10px;
-  color: #007bff;
+    margin-bottom: 10px;
+    color: #007bff;
 }
 
 #weatherInfo p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 767px) {
-  .container {
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 10px;
-  }
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+    }
 }
 
 /* Footer Styles */
 footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto; /* Push the footer to the bottom */
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
 }
 
 /* Additional style for the copyright section */
 footer .down {
-  margin: 0;
+    margin: 0;
 }
 
 /* New CSS styles for footers with "@" sign */
 footer.footer-with-at-sign {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the Contact Us button */
+.contact-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-button a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button a:hover {
+    background-color: #0056b3;
 }
