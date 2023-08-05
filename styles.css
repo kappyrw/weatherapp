@@ -12,6 +12,9 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  min-height: 100vh; /* Set minimum height to ensure the footer stays at the bottom */
+  display: flex;
+  flex-direction: column; /* Use flex layout for the container */
 }
 
 h1 {
@@ -67,3 +70,26 @@ button:hover {
   }
 }
 
+/* Footer Styles */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Additional style for the copyright section */
+footer .down {
+  margin: 0;
+}
+
+/* New CSS styles for footers with "@" sign */
+footer.footer-with-at-sign {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
